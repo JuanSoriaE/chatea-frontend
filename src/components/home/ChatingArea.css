@@ -1,0 +1,91 @@
+.main-chating-area {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  /* Grow all the empty space after hide chat info section */
+  flex-grow: 1;
+  border-right: 2px solid var(--background-secundary-color);
+}
+
+/* Chat Area header */
+
+.chat-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 25px 30px;
+  border-bottom: 2px solid var(--background-secundary-color);
+}
+
+.chat-header-info-container {
+  display: flex;
+  align-items: center;
+}
+
+.chat-header-title {
+  margin: 0;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  margin: 0 0.5em 0 0.5em;
+  background-color: #4f515e;
+  border-radius: 50%;
+}
+
+.chat-header-img:not(:first-of-type) {
+  margin-left: -6px;
+}
+
+.chat-settings-icon {
+  color: var(--font-grey-color);
+}
+
+.chat-settings-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+/* Chating area */
+
+.messages-info-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.messages-info {
+  font-size: 13px;
+  color: var(--font-grey-color);
+  font-weight: 600;
+  text-align: center;
+  margin: 10px;
+}
+
+.chating-area {
+  flex-grow: 1;
+  overflow: scroll;
+  padding: 0 20px 0 20px;
+  position: relative;
+}
+
+/* Chating Area Scrollbar */
+
+.chating-area::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+
+.chating-area::-webkit-scrollbar-track {
+  background-color: var(--background-main-color);
+}
+
+.chating-area::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+}
+
+
+

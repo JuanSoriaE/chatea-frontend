@@ -1,0 +1,64 @@
+.chat-typing-area {
+  padding: 20px 25px 20px 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.message-input-container {
+  width: 100%;
+  display: flex;
+}
+
+.message-input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--background-lighter-color);
+  font-size: 15px;
+  padding: 0.8em;
+  color: var(--font-white-color);
+  border-radius: 3px 0 0 3px;
+  resize: none;
+}
+
+.file-emoji-input-contaier {
+  background-color: var(--background-lighter-color);
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 10px 0 10px;
+  border-radius: 0 3px 3px 0;
+}
+
+.file-emoji-input-contaier > * {
+  cursor: pointer;
+  width: 23px;
+  height: 23px;
+}
+
+/* Message Input Scrollbar */
+.message-input::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+
+.message-input::-webkit-scrollbar-track {
+  background-color: var(--background-secundary-color);
+}
+
+.message-input::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+}
+
+/* Send Message Button */
+
+button.send-message-button {
+  font-weight: 500;
+  display: flex;
+  gap: 5px;
+  padding: 0.8em 1.7em 0.8em 1.7em;
+  justify-content: center;
+  align-items: center;
+}

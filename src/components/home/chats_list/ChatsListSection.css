@@ -1,0 +1,15 @@
+.chats-list-section-header {
+  font-size: 13px;
+  color: var(--font-grey-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.chats-list-section-header-container {
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+
+.chats-list-section {
+  margin-bottom: 20px;
+}

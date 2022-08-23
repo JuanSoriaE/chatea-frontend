@@ -1,0 +1,7 @@
+.confirm-buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 10px;
+}

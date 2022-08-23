@@ -1,0 +1,33 @@
+/* Link to Chat */
+.link-to-chat {
+  all: unset;
+}
+
+.chat-row {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 25px 8px 25px;
+}
+
+.chat-row:hover {
+  background-color: var(--background-lighter-color);
+}
+
+.chat-row-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.chat-row-info {
+  font-size: 16px;
+  color: var(--font-grey-main-color);
+  margin-bottom: 10px;
+}
+
+.new-message {
+  color: var(--font-white-color);
+  font-weight: 600;
+}

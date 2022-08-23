@@ -1,0 +1,125 @@
+:root {
+  --main-color: #5d61ee;
+  --background-main-color: #1e1f28;
+  --background-secundary-color: #282a30;
+  --background-lighter-color: #25262C;
+  --background-main-color-dark: #24253a;
+
+  --font-white-color: #d3d3d3;
+  --font-grey-color: #808080;
+  --font-grey-main-color: #a3a3a3;
+  --link-color: #8387e9;
+  --scrollbar-thumb-color: #363644;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  color: var(--font-white-color);
+  background-color: var(--background-main-color);
+}
+
+.main-button {
+  outline: none;
+  border: none;
+  background-color: var(--main-color);
+  font-size: 16px;
+  padding: 0.7em;
+  color: var(--font-white-color);
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cancel-button {
+  outline: none;
+  border: 2px solid var(--font-grey-color);
+  background-color: transparent;
+  font-size: 16px;
+  padding: 0.7em;
+  color: var(--font-white-color);
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+input, textarea {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 600px) {
+  .main-chats-list {
+    width: min-content;
+  }
+  .chats-list-header-text {
+    display: none;
+  }
+  .chat-row-info {
+    display: none;
+  }
+  .chat-row {
+    gap: 0;
+    justify-content: center;
+    padding: 8px 0px 8px 0px;
+  }
+  .chats-list-section-header-container {
+    padding-left: 0;
+    text-align: center;
+  }
+  .chats-list-header-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .chats-list-header {
+    text-align: center;
+  }
+  .chat-row-img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .chat-header-info-container > *:not(h3){
+    display: none;
+  }
+  .main-chat-info {
+    position: absolute;
+    width: 80%;
+    right: 0;
+  }
+  .modal-content {
+    width: 90%;
+  }
+  /* Typing area */
+  .chat-typing-area > img {
+    display: none;
+  }
+  .send-message-button > span {
+    display: none;
+  }
+  .send-message-button {
+    padding: 0.8em 0.8em 0.8em 0.8em !important;
+  }
+  .chat-typing-area {
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 10px;
+  }
+}
+
+/* Accesibility */
+
+*:focus {
+  outline: 1px solid var(--main-color);
+}
